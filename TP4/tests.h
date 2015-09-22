@@ -6,8 +6,12 @@
 
 
 float dataSets[MAXSET][MAXDATA];
-void afficherNotes(float* data);
-float minimumNote(float* data);
-float maximumNote(float* data);
+void afficherNotes(float* data, int len);
+float minimumNote(float* data, int len);
+float maximumNote(float* data, int len);
+float calculeMoyenne(float* data, int len);
+float calculeVariance(float* data, int len);
+float calculeEcartType(float* data, int len);
+int rechercherValeur(float* data, int len, float item);
 
 #endif
