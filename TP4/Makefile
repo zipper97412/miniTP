@@ -6,9 +6,9 @@ CFLAGS=-Wall -g
 CC=gcc
 
 
-runme: tests.o main.o
-	$(CC) -o $@.bin $< $(LDFLAGS)
-	./runme
+stats: tests.o main.o
+	$(CC) -o $@.bin $^ $(LDFLAGS)
+	rm $^
 
 %.o: %.c
 	$(CC) -o $@ -c $< $(CFLAGS)

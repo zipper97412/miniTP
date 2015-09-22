@@ -7,7 +7,8 @@ CC=gcc
 
 
 postfixe: postfixe.o pile.o
-	$(CC) -o $@.bin postfixe.o pile.o $(LDFLAGS)
+	$(CC) -o $@.bin $^ $(LDFLAGS)
+	rm $^
 
 %.o: %.c
 	$(CC) -o $@ -c $< $(CFLAGS)
