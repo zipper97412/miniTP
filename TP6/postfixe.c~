@@ -44,7 +44,7 @@ int postfixe(char* format) {
 int main(int argc, char* argv[]) {
 
 	printf("%s\n", argv[1]);	
-	printf("le resultat est: %d\n", postfixe(argv[1]));
+	printf("le resultat est: %d", postfixe(argv[1]));
 
 
 	return 0;
