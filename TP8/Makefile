@@ -6,7 +6,11 @@ CFLAGS=-Wall -g
 CC=gcc
 
 
-postfixe: postfixe.o pile.o
+algoTri: algoTri.o
+	$(CC) -o $@.bin $^ $(LDFLAGS)
+	rm $^
+
+mainPointeur: mainPointeur.o
 	$(CC) -o $@.bin $^ $(LDFLAGS)
 	rm $^
 

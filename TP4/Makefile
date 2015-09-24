@@ -6,7 +6,7 @@ CFLAGS=-Wall -g
 CC=gcc
 
 
-postfixe: postfixe.o pile.o
+stats: tests.o main.o
 	$(CC) -o $@.bin $^ $(LDFLAGS)
 	rm $^
 
