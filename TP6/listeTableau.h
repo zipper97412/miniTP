@@ -4,6 +4,8 @@
 /* Sep 2012                                                          */
 /*********************************************************************/
 
+#define MAXCELL 101
+
 typedef struct {
 	int valeur ;
 	int suivant ;
@@ -12,20 +14,20 @@ typedef struct {
 /* le type liste permet de ne pas utiliser de pointeurs */
 typedef element* liste;
 
-/* Retourne un élément libre du tableau
+/* Retourne un ï¿½lï¿½ment libre du tableau
    (suivant = -1). On suppose qu'il y en a toujours un */
 int elementLibre(liste);
 
-/* Initialise tous les éléments de la liste
-   à vide (suivant = -1) à partir de l'émément d'indice 0 
-   jusqu'à l'élément dont l'index est passé en deuxième paramètre *) */
+/* Initialise tous les ï¿½lï¿½ments de la liste
+   ï¿½ vide (suivant = -1) ï¿½ partir de l'ï¿½mï¿½ment d'indice 0
+   jusqu'ï¿½ l'ï¿½lï¿½ment dont l'index est passï¿½ en deuxiï¿½me paramï¿½tre *) */
 void initListe(liste, int);
 
-/* Ajoute x dans la liste triée l */
+/* Ajoute x dans la liste triï¿½e l */
 void insererElement(int, liste);
 
-/* Supprime la première occurrence de x de l */
+/* Supprime la premiï¿½re occurrence de x de l */
 void supprimerElement(int, liste);
 
-/* Affiche les éléments de la liste dans l'ordre */
+/* Affiche les ï¿½lï¿½ments de la liste dans l'ordre */
 void afficherListe(liste);
