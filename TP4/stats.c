@@ -1,4 +1,4 @@
-#include "tests.h"
+#include "stats.h"
 #include <stdio.h>
 #include <math.h>
 

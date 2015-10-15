@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "tests.h"
+#include "stats.h"
 #define RECHERCHE 14.7
 
 int main() {

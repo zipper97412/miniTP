@@ -6,7 +6,7 @@ CFLAGS=-Wall -g
 CC=gcc
 
 
-stats: tests.o main.o
+stats: stats.o stats-test.o
 	$(CC) -o $@.bin $^ $(LDFLAGS)
 	rm $^
 
